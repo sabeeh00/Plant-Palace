@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Plant Palace - Gardening </title>
+    <link rel="icon" href="img/bg-img/PlantPlacemini.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header-area">
+
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                    title=" info.Plantspalace@gmail.com"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i> <span>Email: info.Plantspalace@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+92 312 3456789"><i
+                                        class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +92 312
+                                        3456789</span></a>
+                            </div>
+
+                            <div class="top-header-meta d-flex">
+                                <div class="language-dropdown">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Language</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">USA</a>
+                                            <a class="dropdown-item" href="#">UK</a>
+                                            <a class="dropdown-item" href="#">Bangla</a>
+                                            <a class="dropdown-item" href="#">Hindi</a>
+                                            <a class="dropdown-item" href="#">Spanish</a>
+                                            <a class="dropdown-item" href="#">Latin</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plantpalace-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <nav class="classy-navbar justify-content-between" id="plantpalaceNav">
+
+                        <a href="index.html" class="nav-brand"><img src="img/bg-img/PlantPalacelogo.png"
+                                width="170px"></a>
+
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="category.html">Category</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Sign Up</a></li>
+
+                                </ul>
+
+
+                                <div id="searchIcon">
+                                    <i class="fa fa-search" id="searchInput" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn " data-toggle="modal" data-target="#staticBackdrop"
+                                        style="background-color: transparent; color: #fff;">
+                                        <i class="fa fa-shopping-cart &nbsp; total-count"></i>
+                                    </button>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </nav>
+
+                    <div class="search-form">
+                        <form method="get">
+                            <input type="search" name="search" id="searchBox"
+                                placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none" onclick="searchProducts()"></button>
+                        </form>
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-area">
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/4.jpg);">
+            <h2>CATEGORY</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Category</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+       <section class="plantpalace-category-area catagory section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>OUR Category</h2>
+                        <p>We devote all of our experience and efforts for creation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="plantpalace-category-filter">
+                        <div class="category-filter">
+                            <button class="btn active" data-filter="*">Featured</button>
+                            <button class="btn" data-filter=".design">In Door</button>
+                            <button class="btn" data-filter=".garden">Out Door</button>
+                            <button class="btn" data-filter=".home-design">Succulents</button>
+                            <button class="btn" data-filter=".office-design">Flowering Shrubs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row plantpalace-category">
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item design home-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/6.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/6.jpg" class="category-img d-flex align-items-center justify-content-center" ></a>
+                            <div class="port-hover-text">
+                                <h3>Spider Plant</h3>
+                                <p>•<b>Botanical Name:</b> Chlorophytum comosum. <br>
+                                 •<b>Light requirements:</b>  Bright but filtered light. <br> 
+                                •<b>Soil type:</b> Well-draining, all-purpose soil.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-6 single_category_item garden">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/7.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/7.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>PonyTail palm</h3>
+                                <p>•<b>Botanical Name:</b> Beaucarnea recurvata. <br>
+                                    •<b>Light Requirement:</b> Ponytail palm plant. <br>
+                                    •<b>Soil Type:</b> Well-draining, sandy soil.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item garden office-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/8.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/8.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Ficus Elestica </h3>
+                                <p>• <b>Species:</b> elastica. <br> 
+                                • <b>Light Requirement:</b>bright but filtered sunlight.<br>
+                                • <b>Soil Type:</b>Well, draining, potting soil.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item design office-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/9.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/9.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Jade Plant</h3>
+                                <p>• <b>scientific name:</b>(Crassula ovata). <br>
+                                  •<b>Light:</b>Bright indirect sunlight. <br>
+                                • <b> Water needs:</b> Moderate</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item garden">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/10.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/10.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>String pearls</h3>
+                                <p>•<b>USDA zone:</b> 9-12. <br>
+                                    • <b> Light:</b> Full to partial sun. <br>
+                                    • <b> Soil: </b>Sandy, well-drained. <br>
+                                    • <b> Water Needs:</b> Low</p>
+                    </div>
+                </a>      
+         </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-6 single_category_item home-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/11.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/11.jpg" class="category-img d-flex align-items-center justify-content-center">
+                            <div class="port-hover-text">
+                                <h3>Aloe Vera</h3>
+                                <p>• <b> Light:</b>Bright natural light. <br> 
+                                    • <b> Water Needs:</b>Water regularly except during dormancy. <br>
+                                    • <b> Soil:</b>Sandy, well-drained</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-6 single_category_item design home-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/12.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/12.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Pothos</h3>
+                                <p>• <b> Botanical Name:</b>Epipremnum aureum. <br>
+                                    • <b> Light Requirement:</b>bright but indirect sunlight. <br> 
+                                    • <b> Soil Type:</b>Well-draining, soilless mix.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item garden">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/13.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/13.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Fiddle-leaf fig</h3>
+                                <p>• <b>Botanical Name:</b>  Ficus lyrata. <br>
+                                    • <b>Light Requirement:</b>  from partial shade to full sun. <br>
+                                    • <b>Soil Type:</b>  Well, draining, loam soil</p>
+                                </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item garden office-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/14.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/14.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>weeping fig</h3>
+                                <p>• <b>Botanical Name:</b>Ficus Benjamina. <br>
+                                    • <b>Light Requirement:</b>Bright but indirect sunlight. <br> 
+                                    • <b>Soil Type:</b>Well-draining rich, soil mix.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item design office-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/15.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/15.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>BOUGAINVILLEA </h3>
+                                <p>• <b>KINGDOM.</b>Plantae
+                                   • <b>FAMILY.</b>Nyctaginaceae
+                                   • <b>PLANT TYPE.</b>Vine</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_category_item garden">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/16.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Lavender</h3>
+                                <p> <b>Scientific name:</b> Lavandula. <br>
+                                    <b>Family: </b> Lamiaceae. <br>
+                                    <b>Kingdom:</b>  Plantae</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-6 single_category_item home-design">
+                    <div class="category-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                    <div class="category-hover-overlay">
+                        <a href="img/bg-img/17.jpg" class="category-img d-flex align-items-center justify-content-center" >
+                            <div class="port-hover-text">
+                                <h3>Calathea</h3>
+                                <p>• <b> Botanical Name:</b> Calathea Sp. <br>
+                                    • <b> Light Requirement:</b> ranges from full to part shade. <br> 
+                                    • <b> Soil Type:</b> Well, draining, potting soil mix.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer-area bg-img" style="background-image: url(img/bg-img/3.jpg);">
+    <div class="main-footer-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo mb-30">
+                            <a href="#"><img src="img/bg-img/PlantPalacelogo.png" alt="" width="180px"></a>
+                        </div>
+                        <p>It's true when we say plants make people happy.</p>
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="widget-title">
+                            <h5>QUICK LINK</h5>
+                        </div>
+                        <nav class="widget-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="category.html">Category</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="feedback.html">Feedback</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="widget-title">
+                            <h5>CONTACT</h5>
+                        </div>
+
+                        <div class="contact-information">
+                            <p><span>Address:</span> Karachi, Sindh, Pakistan</p>
+                            <p><span>Phone:</span> +92 312 3456789</p>
+                            <p><span>Email:</span> info.Plantspalace@gmail.com</p>
+                            <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
+                            <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-line"></div>
+                </div>
+               
+
+</footer>
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+
+                </table>
+                <div class="grand-total">Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn plantpalace-btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap/popper.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/plugins/plugins.js"></script>
+        <script src="js/active.js"></script>
+    </body>
+    
+    </html>

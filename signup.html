@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Plant Palace - Sign Up</title>
+    <link rel="icon" href="img/bg-img/PlantPlacemini.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.Plantspalace@gmail.com">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <span>Email: info.Plantspalace@gmail.com</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+92 312 3456789">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>Call Us: +92 312 3456789</span>
+                                </a>
+                            </div>
+                            <div class="top-header-meta d-flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plantpalace-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <nav class="classy-navbar justify-content-between" id="plantpalaceNav">
+                        <a href="index.html" class="nav-brand">
+                            <img src="img/bg-img/PlantPalacelogo.png" width="170px">
+                        </a>
+
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li class="active"><a href="signup.html">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Sign Up</h2>
+                        <p>Create your Plant Palace account</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="feedback-form-area mb-100">
+                        <form id="signupForm">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="signup-name" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="signup-email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="signup-password" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn plantpalace-btn mt-15">Create Account</button>
+                                </div>
+                                <div class="col-12 mt-20">
+                                    <p class="mb-0">Already have an account? <a href="login.html">Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="signupMessage" class="mt-20" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script>
+        (function () {
+            document.getElementById('signupForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                var name = document.getElementById('signup-name').value.trim();
+                var email = document.getElementById('signup-email').value.trim();
+                var message = document.getElementById('signupMessage');
+
+                // Demo signup: store user locally
+                localStorage.setItem('plantpalace_user', JSON.stringify({ name: name, email: email }));
+
+                message.style.display = 'block';
+                message.innerHTML = '<div class="alert alert-success">Account created (demo). Redirecting to login…</div>';
+
+                setTimeout(function () {
+                    window.location.href = 'login.html';
+                }, 700);
+            });
+        })();
+    </script>
+</body>
+
+</html>

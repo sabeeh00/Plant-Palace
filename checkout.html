@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Plant Palace - Checkout</title>
+    <link rel="icon" href="img/bg-img/PlantPlacemini.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.Plantspalace@gmail.com">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <span>Email: info.Plantspalace@gmail.com</span>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+92 312 3456789">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>Call Us: +92 312 3456789</span>
+                                </a>
+                            </div>
+                            <div class="top-header-meta d-flex"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plantpalace-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <nav class="classy-navbar justify-content-between" id="plantpalaceNav">
+                        <a href="index.html" class="nav-brand">
+                            <img src="img/bg-img/PlantPalacelogo.png" width="170px">
+                        </a>
+
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Sign Up</a></li>
+                                </ul>
+
+                                <div>
+                                    <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop"
+                                        style="background-color: transparent; color: #fff;">
+                                        <i class="fa fa-shopping-cart &nbsp; total-count"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Checkout</h2>
+                        <p>Review your items and place your order</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-start justify-content-between">
+                <div class="col-12 col-lg-7">
+                    <div class="feedback-form-area mb-100">
+                        <h4 class="mb-30">Shipping Details</h4>
+                        <form id="checkoutForm">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ship-name" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" id="ship-phone" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="ship-email" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ship-address" placeholder="Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ship-city" placeholder="City" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ship-zip" placeholder="ZIP / Postal Code" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <h4 class="mb-30 mt-20">Payment</h4>
+                                    <div class="form-group">
+                                        <select class="form-control" id="payment-method" required>
+                                            <option value="" selected disabled>Select payment method</option>
+                                            <option value="cod">Cash on Delivery</option>
+                                            <option value="card">Card (demo)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn plantpalace-btn mt-15">Place Order</button>
+                                    <button type="button" id="clearCartBtn" class="btn btn-secondary mt-15">Clear Cart</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="orderMessage" class="mt-20" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="mb-100">
+                        <h4 class="mb-30">Order Summary</h4>
+                        <div class="table-responsive">
+                            <table class="show-cart table"></table>
+                        </div>
+                        <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                        <div class="mt-10">Items: <span class="total-count"></span></div>
+                        <p class="mt-20" id="emptyCartNote" style="display:none;">Your cart is empty. Go back to the <a href="shop.html">shop</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart modal (reused) -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table"></table>
+                    <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script>
+        (function () {
+            function getCart() {
+                try {
+                    return JSON.parse(localStorage.getItem('shoppingCart')) || [];
+                } catch (e) {
+                    return [];
+                }
+            }
+
+            function refreshEmptyState() {
+                var cart = getCart();
+                var empty = !cart || cart.length === 0;
+                document.getElementById('emptyCartNote').style.display = empty ? 'block' : 'none';
+            }
+
+            document.getElementById('clearCartBtn').addEventListener('click', function () {
+                if (window.shoppingCart && shoppingCart.clearCart) {
+                    shoppingCart.clearCart();
+                } else {
+                    localStorage.removeItem('shoppingCart');
+                }
+                if (typeof displayCart === 'function') {
+                    displayCart();
+                }
+                refreshEmptyState();
+            });
+
+            document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                var cart = getCart();
+                if (!cart || cart.length === 0) {
+                    var msg = document.getElementById('orderMessage');
+                    msg.style.display = 'block';
+                    msg.innerHTML = '<div class="alert alert-warning">Your cart is empty.</div>';
+                    return;
+                }
+
+                // Demo "place order": clear cart and show success message
+                if (window.shoppingCart && shoppingCart.clearCart) {
+                    shoppingCart.clearCart();
+                } else {
+                    localStorage.removeItem('shoppingCart');
+                }
+                if (typeof displayCart === 'function') {
+                    displayCart();
+                }
+                refreshEmptyState();
+
+                var msg = document.getElementById('orderMessage');
+                msg.style.display = 'block';
+                msg.innerHTML = '<div class="alert alert-success">Order placed successfully (demo). Thank you!</div>';
+                e.target.reset();
+            });
+
+            refreshEmptyState();
+        })();
+    </script>
+</body>
+
+</html>
